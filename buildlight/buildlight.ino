@@ -39,7 +39,7 @@ void setup() {
   s1.setBuilding(false);
   s1.setMode(SUCCESS);
   
-  s2.setBuilding(true)
+  s2.setBuilding(true);
   s2.setMode(FAILED);
 
   s3.setBuilding(false);
@@ -92,7 +92,7 @@ void loop() {
         // so you can send a reply
         if (c == '\n') {
           
-          int stateL = -1;
+          buildmode stateL = OFF;
           boolean buildingL = false;
           
           if (line.startsWith("GET")) {
